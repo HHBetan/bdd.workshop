@@ -9,6 +9,8 @@
   <ItemGroup>
     <SpecFlowObsoleteCodeBehindFiles Remove="Calculator.feature.cs" />
     <SpecFlowObsoleteCodeBehindFiles Remove="PrimeNumber.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="SquareRoot - Copia.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="steps\SquareRoot.feature.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +34,9 @@
     <Compile Update="Calculator.feature.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
+    <Compile Update="CubeRoot.feature.cs">
+      <DependentUpon>CubeRoot.feature</DependentUpon>
+    </Compile>
     <Compile Update="SquareRoot.feature.cs">
       <Visible>true</Visible>
       <DependentUpon>SquareRoot.feature</DependentUpon>
@@ -48,6 +53,10 @@
 
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Calculator.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="CubeRoot.feature">
       <Visible>$(UsingMicrosoftNETSdk)</Visible>
       <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
     </SpecFlowFeatureFiles>

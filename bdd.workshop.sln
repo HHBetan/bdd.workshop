@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator.tes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{43885907-0AB5-4697-8599-0731058C0616}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator.test.selenium", "bdd.workshop.calculator.test.selenium\bdd.workshop.calculator.test.selenium.csproj", "{2E09BAD1-3006-41DC-9173-A56D7FA33E15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator.tests.selenium", "bdd.workshop.calculator.tests.selenium\bdd.workshop.calculator.tests.selenium.csproj", "{11403781-ADAB-40ED-91FC-2A2308645AE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{635F0C0F-0258-4958-8041-61FE783BD56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635F0C0F-0258-4958-8041-61FE783BD56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635F0C0F-0258-4958-8041-61FE783BD56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E09BAD1-3006-41DC-9173-A56D7FA33E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E09BAD1-3006-41DC-9173-A56D7FA33E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E09BAD1-3006-41DC-9173-A56D7FA33E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E09BAD1-3006-41DC-9173-A56D7FA33E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11403781-ADAB-40ED-91FC-2A2308645AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11403781-ADAB-40ED-91FC-2A2308645AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11403781-ADAB-40ED-91FC-2A2308645AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11403781-ADAB-40ED-91FC-2A2308645AE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +64,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C142C8F7-1CBA-40F6-A482-2EB97107966C} = {5BAE8444-7126-4270-98AD-16BE8663E5FF}
 		{635F0C0F-0258-4958-8041-61FE783BD56A} = {2FCEFEC4-AF31-42F7-8482-6C03A02A4DF7}
+		{2E09BAD1-3006-41DC-9173-A56D7FA33E15} = {2FCEFEC4-AF31-42F7-8482-6C03A02A4DF7}
+		{11403781-ADAB-40ED-91FC-2A2308645AE7} = {5BAE8444-7126-4270-98AD-16BE8663E5FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78105378-371B-4D41-9D8A-CCB6C6F2FF30}

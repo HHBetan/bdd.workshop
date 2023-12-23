@@ -84,7 +84,6 @@ namespace bdd.workshop.calculator.tests.tdd
         [Xunit.SkippableTheoryAttribute(DisplayName="Checking several square roots")]
         [Xunit.TraitAttribute("FeatureTitle", "SquareRoot")]
         [Xunit.TraitAttribute("Description", "Checking several square roots")]
-        [Xunit.InlineDataAttribute("1", "1", new string[0])]
         [Xunit.InlineDataAttribute("2", "1.41", new string[0])]
         [Xunit.InlineDataAttribute("3", "1.73", new string[0])]
         [Xunit.InlineDataAttribute("4", "2", new string[0])]

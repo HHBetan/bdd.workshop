@@ -9,7 +9,6 @@ Scenario Outline: Checking several square roots
 	Then the result of the square root is <result>
 	Examples: 
 	| number | result |
-	| 1      | 1      |
 	| 2      | 1.41   |
 	| 3      | 1.73   |
 	| 4      | 2      |

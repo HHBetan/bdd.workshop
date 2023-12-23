@@ -19,7 +19,7 @@ namespace bdd.workshop.calculator.tests.selenium
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class SquareRootFeature : object, Xunit.IClassFixture<SquareRootFeature.FixtureData>, System.IDisposable
+    public partial class CubeRootFeature : object, Xunit.IClassFixture<CubeRootFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace bdd.workshop.calculator.tests.selenium
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "SquareRoot.feature"
+#line 1 "CubeRoot.feature"
 #line hidden
         
-        public SquareRootFeature(SquareRootFeature.FixtureData fixtureData, bdd_workshop_calculator_tests_selenium_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public CubeRootFeature(CubeRootFeature.FixtureData fixtureData, bdd_workshop_calculator_tests_selenium_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,8 +40,8 @@ namespace bdd.workshop.calculator.tests.selenium
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "SquareRoot", "\tAs Alice (the customer)\r\n\tI want to know the square root of a number\r\n\tSo I can " +
-                    "organize my inventory", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "CubeRoot", "\tAs Alice (the customer)\r\n\tI want to know the cube root of a number\r\n\tSo I can or" +
+                    "ganize my inventory", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -81,35 +81,37 @@ namespace bdd.workshop.calculator.tests.selenium
             this.TestTearDown();
         }
         
-        [Xunit.SkippableTheoryAttribute(DisplayName="Checking several square roots")]
-        [Xunit.TraitAttribute("FeatureTitle", "SquareRoot")]
-        [Xunit.TraitAttribute("Description", "Checking several square roots")]
-        [Xunit.InlineDataAttribute("2", "1.41", new string[0])]
-        [Xunit.InlineDataAttribute("3", "1.73", new string[0])]
-        [Xunit.InlineDataAttribute("4", "2", new string[0])]
-        [Xunit.InlineDataAttribute("5", "2.24", new string[0])]
-        [Xunit.InlineDataAttribute("6", "2.45", new string[0])]
-        [Xunit.InlineDataAttribute("7", "2.65", new string[0])]
-        [Xunit.InlineDataAttribute("8", "2.83", new string[0])]
-        [Xunit.InlineDataAttribute("9", "3", new string[0])]
-        [Xunit.InlineDataAttribute("10", "3.16", new string[0])]
-        [Xunit.InlineDataAttribute("16", "4", new string[0])]
-        [Xunit.InlineDataAttribute("20", "4.47", new string[0])]
-        [Xunit.InlineDataAttribute("25", "5", new string[0])]
-        [Xunit.InlineDataAttribute("30", "5.47", new string[0])]
-        [Xunit.InlineDataAttribute("36", "6", new string[0])]
-        [Xunit.InlineDataAttribute("49", "7", new string[0])]
-        [Xunit.InlineDataAttribute("64", "8", new string[0])]
-        [Xunit.InlineDataAttribute("81", "9", new string[0])]
-        [Xunit.InlineDataAttribute("100", "10", new string[0])]
-        [Xunit.InlineDataAttribute("121", "11", new string[0])]
-        public virtual void CheckingSeveralSquareRoots(string number, string result, string[] exampleTags)
+        [Xunit.SkippableTheoryAttribute(DisplayName="Checking several cube roots")]
+        [Xunit.TraitAttribute("FeatureTitle", "CubeRoot")]
+        [Xunit.TraitAttribute("Description", "Checking several cube roots")]
+        [Xunit.InlineDataAttribute("1", "1", new string[0])]
+        [Xunit.InlineDataAttribute("2", "1.26", new string[0])]
+        [Xunit.InlineDataAttribute("3", "1.44", new string[0])]
+        [Xunit.InlineDataAttribute("4", "1.59", new string[0])]
+        [Xunit.InlineDataAttribute("5", "1.71", new string[0])]
+        [Xunit.InlineDataAttribute("6", "1.82", new string[0])]
+        [Xunit.InlineDataAttribute("7", "1.91", new string[0])]
+        [Xunit.InlineDataAttribute("8", "2", new string[0])]
+        [Xunit.InlineDataAttribute("9", "2.08", new string[0])]
+        [Xunit.InlineDataAttribute("10", "2.15", new string[0])]
+        [Xunit.InlineDataAttribute("16", "2.52", new string[0])]
+        [Xunit.InlineDataAttribute("20", "2.71", new string[0])]
+        [Xunit.InlineDataAttribute("25", "2.92", new string[0])]
+        [Xunit.InlineDataAttribute("27", "3", new string[0])]
+        [Xunit.InlineDataAttribute("30", "3.11", new string[0])]
+        [Xunit.InlineDataAttribute("36", "3.30", new string[0])]
+        [Xunit.InlineDataAttribute("49", "3.65", new string[0])]
+        [Xunit.InlineDataAttribute("64", "4", new string[0])]
+        [Xunit.InlineDataAttribute("81", "4.32", new string[0])]
+        [Xunit.InlineDataAttribute("100", "4.64", new string[0])]
+        [Xunit.InlineDataAttribute("121", "4.95", new string[0])]
+        public virtual void CheckingSeveralCubeRoots(string number, string result, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("number", number);
             argumentsOfScenario.Add("result", result);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checking several square roots", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checking several cube roots", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -131,10 +133,10 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 7
- testRunner.When(string.Format("number {0} is added", number), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("number {0} is added for cube root", number), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.Then(string.Format("the result of the square root is {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the result of the cube root is {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -147,12 +149,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                SquareRootFeature.FeatureSetup();
+                CubeRootFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                SquareRootFeature.FeatureTearDown();
+                CubeRootFeature.FeatureTearDown();
             }
         }
     }
