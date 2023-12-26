@@ -68,6 +68,14 @@ namespace bdd.workshop.calculator.tests.xunit
             double result = 5;
             Assert.True(Operator.SquareRoot(a) == result);
         }
+        [Fact]
+        [Trait("TestType", "UT")]
+        public void GetCubeRoot()
+        {
+            int a = 27;
+            double result = 3;
+            Assert.True(Operator.CubeRoot(a) == result);
+        }
         [Theory(DisplayName ="Prime Number Theory")]
         [Trait("TestType","Theory")]
         [InlineData(0, PrimeNumberInfo.Unknown)]
