@@ -3,7 +3,6 @@
 	I want to know the square root of a number
 	So I can organize my inventory
 
-
 Scenario Outline: Checking several square roots
 	When number <number> is added
 	Then the result of the square root is <result>

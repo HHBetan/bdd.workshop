@@ -1,7 +1,7 @@
 ﻿Feature: CubeRoot
 	As Alice (the customer)
 	I want to know the cube root of a number
-	So I can organize my inventory
+	So I can organize volume in my inventory
 
 Scenario Outline: Checking several cube roots
 	When number <number> is added for cube root
