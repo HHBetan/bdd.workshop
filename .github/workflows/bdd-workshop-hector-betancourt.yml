@@ -1,4 +1,4 @@
-name: Compilar e implementar la aplicación de .NET Core en la aplicación web bdd-workshop-hector-betancourt
+name: Compilar e implementar la aplicación de .NET Core en la aplicación web bdd-workshop-hector-betancourt
 on:
   push:
     branches:
